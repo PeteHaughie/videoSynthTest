@@ -26,7 +26,7 @@ void ofApp::update(){
             volume[i] = 0;
             N[i] = 0;
         }
-        unsigned char * input = grabber.getPixels();
+        unsigned char * input = grabber.getPixels().getData();
         for(int y = 0; y<h ; y++){
             for (int x=0; x<w; x++) {
                 int r = input[3*(x+w*y)+0];
